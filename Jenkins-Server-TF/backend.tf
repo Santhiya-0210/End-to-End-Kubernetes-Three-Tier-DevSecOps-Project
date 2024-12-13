@@ -3,7 +3,7 @@ terraform {
     bucket         = "jenkins-s3-bucket1"
     region         = "us-east-1"
     key            = "End-to-End-Kubernetes-Three-Tier-DevSecOps-Project/Jenkins-Server-TF/terraform.tfstate"
-    dynamodb_table = "Users-User-id"
+    dynamodb_table = "Terraform-locks"
     encrypt        = true
   }
   required_version = ">=0.13.0"
