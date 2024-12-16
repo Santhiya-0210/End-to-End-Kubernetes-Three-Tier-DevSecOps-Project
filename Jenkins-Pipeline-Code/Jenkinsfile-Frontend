@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git credentialsId: 'GITHUB', url: 'https://github.com/AmanPathak-DevOps/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project.git'
+                git credentialsId: 'GITHUB', url: 'https://github.com/Santhiya-0210/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project.git'
             }
         }
         stage('Sonarqube Analysis') {
@@ -30,7 +30,7 @@ pipeline {
                         -Dsonar.projectName=three-tier-frontend \
                         -Dsonar.projectKey=three-tier-frontend \
                         -Dsonar.sources=. \
-                        -Dsonar.host.url=http://54.89.156.99:9000 \
+                        -Dsonar.host.url=http://52.23.202.69:9000 \
                         -Dsonar.login=squ_12122529aecc2d0d66075f928cb9aa7f63726a33'''
                     }
                 }
@@ -85,7 +85,7 @@ pipeline {
         }
         stage('Checkout Code') {
             steps {
-                git credentialsId: 'GITHUB', url: 'https://github.com/AmanPathak-DevOps/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project.git'
+                git credentialsId: 'GITHUB', url: 'https://github.com/Santhiya-0210/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project.git'
             }
         }
         stage('Update Deployment file') {
