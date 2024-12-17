@@ -30,7 +30,7 @@ pipeline {
                         -Dsonar.projectName=three-tier-backend \
                         -Dsonar.projectKey=three-tier-backend \
                         -Dsonar.sources=. \
-                        -Dsonar.host.url=http://52.23.202.69:9000 \
+                        -Dsonar.host.url=http://54.224.203.99:9000 \
                         -Dsonar.login=squ_12122529aecc2d0d66075f928cb9aa7f63726a33'''
                     }
                 }
